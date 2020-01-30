@@ -6,15 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     >
-
-  <TextView
-      android:layout_width="wrap_content"
+  <Button
+      android:id="@+id/someDataBtn"
+      android:layout_width="0dp"
       android:layout_height="wrap_content"
-      android:text="Hello World!"
+      android:background="@android:color/white"
+      android:text="Some Data"
+      android:textColor="@color/colorPrimaryDark"
       app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintLeft_toLeftOf="parent"
-      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/noContentBtn"
+      />
+  <Button
+      android:id="@+id/noContentBtn"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimaryDark"
+      android:text="No Content"
+      android:textColor="@android:color/white"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toStartOf="@+id/someDataBtn"
+      app:layout_constraintStart_toStartOf="parent"
+      />
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerView"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintBottom_toTopOf="@+id/noContentBtn"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="parent"
       />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
