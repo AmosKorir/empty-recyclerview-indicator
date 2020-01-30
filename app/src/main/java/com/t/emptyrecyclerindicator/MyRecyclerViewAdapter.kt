@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.t.emptyrecyclerindicator.MyRecyclerViewAdapter.MyViewHolder
 import kotlinx.android.synthetic.main.recycler_item_layout.view.nameTv
@@ -41,6 +42,13 @@ class MyRecyclerViewAdapter() : RecyclerView.Adapter<MyViewHolder>() {
 
   override fun getItemCount(): Int {
     return itemList.size
+
+  }
+
+  override fun registerAdapterDataObserver(observer: AdapterDataObserver) {
+    super.registerAdapterDataObserver(observer)
+    val myApplication = context.applicationContext as MyApplication
+    myApplication.getEmptyIndicator().recylerViewState(itemList.size)
 
   }
 

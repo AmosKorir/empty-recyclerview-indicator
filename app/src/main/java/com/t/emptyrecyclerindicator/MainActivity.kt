@@ -20,6 +20,9 @@ class MainActivity : AppCompatActivity() {
     //setup the recycleview
 
     recyclerView.layoutManager = LinearLayoutManager(this)
+    var myApplication = application as MyApplication
+    myApplication.getEmptyIndicator().show(this, recyclerView)
+    //add indicator
 
     //setup button click listeners
     someDataBtn.setOnClickListener {
@@ -30,9 +33,14 @@ class MainActivity : AppCompatActivity() {
     }
   }
 
+  override fun onStart() {
+    super.onStart()
+  }
+
   private fun getData(state: Boolean) {
     var data = Repository().getSomeContent(state)
-    var adapter = MyRecyclerViewAdapter(this, data)
+    var adapter = MyRecyclerViewAdapter(applicationContext, data)
     recyclerView.adapter = adapter
   }
+
 }
