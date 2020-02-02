@@ -6,17 +6,20 @@ import com.t.emptyrecyclerindicator.emptyreclerviewindicator.RecyclerViewIndicat
 
 /**
  * Created by Korir on 1/30/20.
- * amoskrr@gmail.com
  */
 class MyApplication : Application() {
-  lateinit var emptyViewIndicator: EmptyViewIndicator
+  private lateinit var emptyViewIndicator: EmptyViewIndicator
   override fun onCreate() {
     super.onCreate()
     emptyViewIndicator = EmptyViewIndicator.instance()!!
   }
 
   fun getEmptyIndicator(): RecyclerViewIndicator {
-    return emptyViewIndicator.recyclerViewIndicator
+    return emptyViewIndicator.build()
+      .setCustomLayout(R.layout.custom_layout)
+      .setHeight(500)
+      .setWidth(400)
+
   }
 
 }

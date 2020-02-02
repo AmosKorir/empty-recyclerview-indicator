@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.t.emptyrecyclerindicator.MyRecyclerViewAdapter.MyViewHolder
+import com.t.emptyrecyclerindicator.models.Job
 import kotlinx.android.synthetic.main.recycler_item_layout.view.nameTv
 import kotlinx.android.synthetic.main.recycler_item_layout.view.positionTv
 
@@ -19,9 +20,9 @@ import kotlinx.android.synthetic.main.recycler_item_layout.view.positionTv
 class MyRecyclerViewAdapter() : RecyclerView.Adapter<MyViewHolder>() {
 
   lateinit var context: Context
-  lateinit var itemList: List<String>
+  lateinit var itemList: List<Job>
 
-  constructor(cxt: Context, contList: List<String>) : this() {
+  constructor(cxt: Context, contList: List<Job>) : this() {
     context = cxt
     itemList = contList
   }
@@ -48,12 +49,12 @@ class MyRecyclerViewAdapter() : RecyclerView.Adapter<MyViewHolder>() {
   override fun registerAdapterDataObserver(observer: AdapterDataObserver) {
     super.registerAdapterDataObserver(observer)
     val myApplication = context.applicationContext as MyApplication
-    myApplication.getEmptyIndicator().recylerViewState(itemList.size)
+    myApplication.getEmptyIndicator().recyclerViewState(itemList.size)
 
   }
 
   override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-    holder.view.nameTv.text = itemList[position]
+    holder.view.nameTv.text = itemList[position].company
     holder.view.positionTv.text = position.toString()
   }
 
