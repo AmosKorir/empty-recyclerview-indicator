@@ -1,4 +1,4 @@
-package com.t.emptyrecyclerindicator.emptyreclerviewindicator
+package com.noconent.emptyreclerviewindicator
 
 import android.app.Activity
 import android.graphics.Color
@@ -12,7 +12,7 @@ import android.widget.ProgressBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.AdapterDataObserver
-import com.t.emptyrecyclerindicator.R
+import com.noconent.R
 
 /**
  * Created by Korir on 1/30/20.

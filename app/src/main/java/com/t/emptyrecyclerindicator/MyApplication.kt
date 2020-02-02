@@ -1,8 +1,8 @@
 package com.t.emptyrecyclerindicator
 
 import android.app.Application
-import com.t.emptyrecyclerindicator.emptyreclerviewindicator.EmptyViewIndicator
-import com.t.emptyrecyclerindicator.emptyreclerviewindicator.RecyclerViewIndicator
+import com.noconent.emptyreclerviewindicator.EmptyViewIndicator
+import com.noconent.emptyreclerviewindicator.RecyclerViewIndicator
 
 /**
  * Created by Korir on 1/30/20.

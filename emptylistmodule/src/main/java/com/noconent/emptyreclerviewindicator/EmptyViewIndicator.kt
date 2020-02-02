@@ -1,4 +1,4 @@
-package com.t.emptyrecyclerindicator.emptyreclerviewindicator
+package com.noconent.emptyreclerviewindicator
 
 /**
  * Created by Korir on 1/30/20.

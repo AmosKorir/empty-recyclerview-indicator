@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.t.emptyrecyclerindicator.Repository.RepositoryInterface
-import com.t.emptyrecyclerindicator.emptyreclerviewindicator.RecyclerViewIndicator
+import com.noconent.emptyreclerviewindicator.RecyclerViewIndicator
 import com.t.emptyrecyclerindicator.models.Job
 import kotlinx.android.synthetic.main.activity_main.noContentBtn
 import kotlinx.android.synthetic.main.activity_main.recyclerView
