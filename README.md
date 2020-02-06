@@ -1,4 +1,4 @@
-# Empty-recyclerView-indicator :rocket:
+# Empty-recyclerView-indicator 
 
 <a href="https://bintray.com/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/1.0/link"><img src="https://api.bintray.com/packages/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/images/download.svg?version=1.0"/></a>
 Show no content indicator for RecyclerView,
@@ -6,18 +6,20 @@ Show no content indicator for RecyclerView,
 This is a reactive model that observes the recyclerView adapter items. It show "no content " when the number of items
 within the recyclerView is zero. During loading process, it shows a progressBar with loading status. **It is not a customView** :smile:
 
-**How to use**
+![Alt Text](https://github.com/skyways/empty-recyclerview-indicator/tree/art/ezgif.com-video-to-gif.gif)
+
+##How to use
 
 <p > <h3 style='color:green'>How to use.</h3></p>
 
-**Installation**
+### Installation
 
 ```groovy
 implementation 'com.nocontent.emptyrecyclerindicator:RecyclerViewEmptyIndicator:1.0'
 
 ```
 
-**Creation of an Instance**
+### Creation of an Instance
 
 Create an instance of the EmptyViewIndicator within the application class.
 
@@ -37,7 +39,7 @@ fun getEmptyIndicator(): RecyclerViewIndicator {
 }
 ```
 
-**Usage in an activity**
+### Usage in an activity
 
 ```kotlin
   //at the top of activity
@@ -51,7 +53,9 @@ fun getEmptyIndicator(): RecyclerViewIndicator {
 
 ```
 
-**Set RecyclerView Adapter**
+### Set RecyclerView Adapter
+
+You need to override a method by registering DataObserver within the adapter as below.
 
 ```kotlin
 override fun registerAdapterDataObserver(observer: AdapterDataObserver) {
@@ -62,14 +66,16 @@ override fun registerAdapterDataObserver(observer: AdapterDataObserver) {
   }
 ```
 
-**Refresh the View**
+### Refresh the View
+
 The view need to be refreshed when new data is fetched.
 
 ```kotlin
    emptyRecyclerIndicator.refresh()
 ```
 
-**EmptyRecyclerViewIndicator methods**
+### EmptyRecyclerViewIndicator methods
+
 Most of these methods are optional but essential for view customization.
 
 <table>
