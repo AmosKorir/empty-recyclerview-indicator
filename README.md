@@ -7,7 +7,7 @@ Show no content indicator for RecyclerView,
 This is a reactive model that observes the recyclerView adapter items. It show "no content " when the number of items
 within the recyclerView is zero. During loading process, it shows a progressBar with loading status. **It is not a customView** :smile:
 
-![Alt Text](https://github.com/skyways/empty-recyclerview-indicator/tree/art/ezgif.com-video-to-gif.gif)
+![image](https://github.com/skyways/empty-recyclerview-indicator/blob/master/art/ezgif.com-video-to-gif.gif)
 
 ## How to use
 
