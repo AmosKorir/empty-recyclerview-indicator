@@ -1,6 +1,7 @@
 # Empty-recyclerView-indicator 
 
-<a href="https://bintray.com/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/1.0/link"><img src="https://api.bintray.com/packages/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/images/download.svg?version=1.0"/></a>
+<a href="https://bintray.com/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/1.0/link"><img src="https://api.bintray.com/packages/skyways/RecyclerViewEmptyIndicator/RecyclerViewEmptyIndicator/images/download.svg?version=1.0"/></a> [![Codacy Badge](https://api.codacy.com/project/badge/Grade/34279c3065a5483185716733005e7c6a)](https://www.codacy.com/manual/skyways/empty-recyclerview-indicator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=skyways/empty-recyclerview-indicator&amp;utm_campaign=Badge_Grade)
+
 Show no content indicator for RecyclerView,
 
 This is a reactive model that observes the recyclerView adapter items. It show "no content " when the number of items
