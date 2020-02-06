@@ -8,7 +8,7 @@ within the recyclerView is zero. During loading process, it shows a progressBar 
 
 ![Alt Text](https://github.com/skyways/empty-recyclerview-indicator/tree/art/ezgif.com-video-to-gif.gif)
 
-##How to use
+## How to use
 
 <p > <h3 style='color:green'>How to use.</h3></p>
 
